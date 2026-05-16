@@ -13,16 +13,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative">
         {/* Brand */}
         <div>
-          <Link to="/" className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 bg-orange rotate-45 grid place-items-center">
-              <div className="w-3.5 h-3.5 bg-dark"></div>
-            </div>
-            <div className="font-display text-3xl tracking-widest text-white">
-              CORE<span className="text-orange">&</span>DRILL
-            </div>
-          </Link>
+      <Link to="/" className="group flex items-center">
+  <img
+    src="/logo.png"
+    alt="Core & Drill Logo"
+    className="h-14 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+  />
+</Link>
           <p className="text-sm leading-relaxed">
-            India's specialist crew for concrete cutting, diamond drilling, anchor installation and complete electrical rewiring. Licensed, insured, on time.
+            India's specialist crew for concrete cutting, diamond drilling, anchor installation and complete electrical rebaring. Licensed, insured, on time.
           </p>
           <div className="flex gap-3 mt-6">
             {[Facebook, Instagram, Youtube, Linkedin].map((Icon, i) => (
@@ -64,7 +63,7 @@ export default function Footer() {
             Services
           </h4>
           <ul className="space-y-3 text-sm">
-            {['Core Cutting', 'Diamond Drilling', 'Wall Cutting', 'Floor Sawing', 'Anchor Fixing', 'Rewiring'].map((s) => (
+            {['Core Cutting', 'Diamond Drilling', 'Wall Cutting', 'Floor Sawing', 'Anchor Fixing', 'Rebaring'].map((s) => (
               <li key={s}>
                 <Link to="/services" className="hover:text-orange transition flex items-center gap-2 group">
                   <span className="text-orange group-hover:translate-x-1 transition-transform">›</span>
@@ -84,19 +83,19 @@ export default function Footer() {
             <li className="flex gap-3 items-start border-l-2 border-orange pl-4">
               <div>
                 <p className="text-white font-semibold mb-1">Office Address</p>
-                Civil Lines, Gorakhpur,<br />Uttar Pradesh 273001, India
+                Rasoolpur Sadat Indira Nagar, Lucknow-2260028<br />Uttar Pradesh , India
               </div>
             </li>
             <li className="flex gap-3 items-start border-l-2 border-orange pl-4">
               <div>
                 <p className="text-white font-semibold mb-1">Phone</p>
-                +91 98765 43210<br />+91 98765 43211
+                +91 8400664700
               </div>
             </li>
             <li className="flex gap-3 items-start border-l-2 border-orange pl-4">
               <div>
                 <p className="text-white font-semibold mb-1">Email</p>
-                info@coreanddrill.com
+                coreanddrill@gmail.com
               </div>
             </li>
           </ul>

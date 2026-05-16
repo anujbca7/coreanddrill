@@ -11,7 +11,7 @@ const videos = [
   { type: 'video', id: 'M7lc1UVf-VE', cat: 'Wall Cutting · Sample', title: 'Track-Mounted Wall Saw Door Opening', desc: 'Cutting a 2.1m × 0.9m doorway through a 230mm RCC wall in a residential building — straight, square, no overcuts.', meta: ['Duration: 3:02', 'Site: Kanpur'], img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80' },
   { type: 'placeholder', cat: 'Floor Sawing · Placeholder', title: 'Walk-Behind Floor Saw — Expansion Joints', desc: 'Replace this placeholder with your own YouTube ID. Footage of expansion joint cutting on an industrial slab.', meta: ['Awaiting Upload', 'Format: 16:9'] },
   { type: 'placeholder', cat: 'Anchor Fixing · Placeholder', title: 'Chemical Anchor Installation Walkthrough', desc: 'Replace with footage of M16 chemical anchor installation, hole cleaning and resin injection technique.', meta: ['Awaiting Upload', 'Format: 16:9'] },
-  { type: 'placeholder', cat: 'Rewiring · Placeholder', title: 'Full-House Rewire Time-Lapse', desc: 'Replace with a time-lapse of a complete apartment rewire — chasing, conduiting, MCB panel install and final testing.', meta: ['Awaiting Upload', 'Format: 16:9'] },
+  { type: 'placeholder', cat: 'Rebaring · Placeholder', title: 'Full-House Rebar Time-Lapse', desc: 'Replace with a time-lapse of a complete apartment rebar — chasing, conduiting, MCB panel install and final testing.', meta: ['Awaiting Upload', 'Format: 16:9'] },
   { type: 'video', id: '9bZkp7q19f0', cat: 'Anchor Fixing · Sample', title: 'Heavy-Load Mechanical Anchors for Steel Frame', desc: '16mm wedge anchors for a steel structure baseplate — drill-clean-inject-set workflow with pull-test demonstration.', meta: ['Duration: 2:35', 'Site: Industrial'], img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&q=80' },
   { type: 'placeholder', cat: 'Showcase · Placeholder', title: 'Core & Drill — 2026 Company Reel', desc: 'Highlight reel showcasing all six service areas across multiple projects. Replace with your edited showreel.', meta: ['Awaiting Upload', 'Format: 16:9'] },
 ]
@@ -120,7 +120,7 @@ export default function Videos() {
           <SectionTag>Watch Our Crew</SectionTag>
           <SectionTitle accent="Real Sites.">Real Cuts.</SectionTitle>
           <FadeIn delay={0.2}>
-            <p className="text-gray-600 mt-6 mb-16 max-w-xl text-lg">A growing library of footage from our actual jobs — drilling, sawing, cutting, anchor work and rewiring.</p>
+            <p className="text-gray-600 mt-6 mb-16 max-w-xl text-lg">A growing library of footage from our actual jobs — drilling, sawing, cutting, anchor work and rebaring.</p>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -130,7 +130,7 @@ export default function Videos() {
           </div>
 
           {/* Instructions box */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -142,7 +142,7 @@ export default function Videos() {
             <p className="text-white/80 mb-3">Open <code className="bg-dark-3 px-2 py-1 text-orange">src/pages/Videos.jsx</code> in your editor.</p>
             <p className="text-white/80 mb-3">For sample videos: find the YouTube ID like <code className="bg-dark-3 px-2 py-1 text-orange">'oHg5SJYRHA0'</code> and replace it with your own (the part after <code className="bg-dark-3 px-2 py-1 text-orange">v=</code> in any YouTube URL).</p>
             <p className="text-white/80">For placeholder cards: change <code className="bg-dark-3 px-2 py-1 text-orange">type: 'placeholder'</code> to <code className="bg-dark-3 px-2 py-1 text-orange">type: 'video'</code>, add an <code className="bg-dark-3 px-2 py-1 text-orange">id</code> and <code className="bg-dark-3 px-2 py-1 text-orange">img</code> field.</p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 

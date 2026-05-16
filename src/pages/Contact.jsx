@@ -7,9 +7,9 @@ import { SectionTag, SectionTitle, FadeIn } from '../components/SectionTitle'
 import MagneticButton from '../components/MagneticButton'
 
 const infoItems = [
-  { icon: MapPin, title: 'Office Address', lines: ['Civil Lines, Near Town Hall', 'Gorakhpur, Uttar Pradesh 273001', 'India'] },
-  { icon: Phone, title: 'Call Us', lines: ['+91 98765 43210 (Bookings)', '+91 98765 43211 (Site Emergencies)'] },
-  { icon: Mail, title: 'Email Us', lines: ['info@coreanddrill.com', 'quotes@coreanddrill.com'] },
+  { icon: MapPin, title: 'Office Address', lines: ['Rasoolpur Sadat Indira Nagar', 'Lucknow, Uttar Pradesh 226028', 'India'] },
+  { icon: Phone, title: 'Call Us', lines: ['+91 8400664700 (Bookings)', '+91 8400664700 (Site Emergencies)'] },
+  { icon: Mail, title: 'Email Us', lines: ['coreanddrill@gmail.com'] },
   { icon: Clock, title: 'Working Hours', lines: ['Mon – Sat: 8:00 AM – 8:00 PM', 'Sunday: Emergency calls only'] },
 ]
 
@@ -141,7 +141,7 @@ function ContactSection() {
                   <option>Wall Cutting & Sawing</option>
                   <option>Floor Sawing & Cutting</option>
                   <option>Chemical Anchor Fixing</option>
-                  <option>Complete Rewiring</option>
+                  <option>Complete Rebaring</option>
                   <option>Multiple Services</option>
                 </select>
               </div>
@@ -170,34 +170,13 @@ function ContactSection() {
   )
 }
 
-function MapSection() {
-  return (
-    <section className="bg-cream">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="w-full h-[450px] relative"
-      >
-        <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=83.36%2C26.74%2C83.40%2C26.77&amp;layer=mapnik&amp;marker=26.7606%2C83.3732"
-          className="w-full h-full grayscale-[60%] contrast-110"
-          style={{ filter: 'grayscale(60%) contrast(1.1)' }}
-        />
-        <div className="absolute inset-0 bg-orange/5 pointer-events-none mix-blend-multiply"></div>
-      </motion.div>
-    </section>
-  )
-}
 
 export default function Contact() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <PageHeader title="Get In" accent="Touch" breadcrumb="Contact" image="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&q=80" />
       <ContactSection />
-      <MapSection />
-      <CTABanner title="Emergency cutting job? We respond 24/7." buttonText="Call: +91 98765 43211" />
+      <CTABanner title="Emergency cutting job? We respond 24/7." buttonText="Call: +91 8400664700" />
     </motion.div>
   )
 }

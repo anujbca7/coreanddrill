@@ -10,11 +10,11 @@ const projects = [
   { cat: 'drill', catLabel: 'Diamond Drilling', title: 'HVAC Riser, Hotel Block', img: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=900&q=80' },
   { cat: 'floor', catLabel: 'Floor Sawing', title: 'Industrial Expansion Joints', img: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=900&q=80' },
   { cat: 'anchor', catLabel: 'Anchor Fixing', title: 'Steel Frame Mount', img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=900&q=80' },
-  { cat: 'wire', catLabel: 'Rewiring', title: '4-BHK Apartment Rewire', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80' },
+  { cat: 'wire', catLabel: 'Rebaring', title: '4-BHK Apartment Rebar', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80' },
   { cat: 'core', catLabel: 'Core Cutting', title: 'Drainage Cut, Varanasi', img: 'https://images.unsplash.com/photo-1590725140246-20acdee442be?w=900&q=80' },
   { cat: 'wall', catLabel: 'Wall Cutting', title: 'Window Retrofit, Lucknow', img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80' },
   { cat: 'drill', catLabel: 'Drilling', title: 'Conduit Array, Mall Site', img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80' },
-  { cat: 'wire', catLabel: 'Rewiring', title: 'Hotel Block Wiring', img: 'https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=900&q=80' },
+  { cat: 'wire', catLabel: 'Rebaring', title: 'Hotel Block Rebar', img: 'https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=900&q=80' },
   { cat: 'floor', catLabel: 'Floor Sawing', title: 'Warehouse Trench Cut', img: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80' },
   { cat: 'anchor', catLabel: 'Anchor Fixing', title: 'Façade Bracket Install', img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=80' },
 ]
@@ -26,7 +26,7 @@ const filters = [
   { id: 'wall', label: 'Wall Cutting' },
   { id: 'floor', label: 'Floor Sawing' },
   { id: 'anchor', label: 'Anchor Fixing' },
-  { id: 'wire', label: 'Rewiring' },
+  { id: 'wire', label: 'Rebaring' },
 ]
 
 function FilterableGallery() {

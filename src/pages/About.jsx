@@ -113,7 +113,7 @@ function ProcessSection() {
 
               <motion.div
                 whileHover={{ scale: 1.1, color: '#ff6a00' }}
-                className="font-display text-8xl leading-none mb-4 text-stroke text-orange"
+                className="font-display text-8xl leading-none mb-4 text-stroke !text-orange"
               >
                 {s.num}
               </motion.div>
@@ -127,52 +127,52 @@ function ProcessSection() {
   )
 }
 
-function TeamSection() {
-  const team = [
-    { name: 'Vikram Singh', role: 'Founder & Lead Operator', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80' },
-    { name: 'Rohit Sharma', role: 'Site Supervisor', img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80' },
-    { name: 'Arun Yadav', role: 'Drilling Specialist', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80' },
-    { name: 'Manoj Kumar', role: 'Master Electrician', img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&q=80' },
-  ]
-  return (
-    <section className="py-32 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <SectionTag>The Crew</SectionTag>
-        <SectionTitle accent="The Cuts">People Behind</SectionTitle>
-        <FadeIn delay={0.2}>
-          <p className="text-gray-600 mt-6 mb-16 max-w-xl text-lg">Trained operators, certified electricians, disciplined supervisors.</p>
-        </FadeIn>
+// function TeamSection() {
+//   const team = [
+//     { name: 'Vikram Singh', role: 'Founder & Lead Operator', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80' },
+//     { name: 'Rohit Sharma', role: 'Site Supervisor', img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80' },
+//     { name: 'Arun Yadav', role: 'Drilling Specialist', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80' },
+//     { name: 'Manoj Kumar', role: 'Master Electrician', img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&q=80' },
+//   ]
+//   return (
+//     <section className="py-32 px-6 bg-white">
+//       <div className="max-w-7xl mx-auto">
+//         <SectionTag>The Crew</SectionTag>
+//         <SectionTitle accent="The Cuts">People Behind</SectionTitle>
+//         <FadeIn delay={0.2}>
+//           <p className="text-gray-600 mt-6 mb-16 max-w-xl text-lg">Trained operators, certified electricians, disciplined supervisors.</p>
+//         </FadeIn>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {team.map((t, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              whileHover={{ y: -8 }}
-              className="group relative overflow-hidden bg-dark"
-            >
-              <div className="aspect-[3/4] overflow-hidden">
-                <motion.img
-                  src={t.img}
-                  alt=""
-                  className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
-                />
-              </div>
-              <div className="bg-dark text-white p-5 relative group-hover:bg-orange transition-colors duration-300">
-                <div className="absolute -top-4 left-5 w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-b-[15px] border-b-dark group-hover:border-b-orange transition-colors"></div>
-                <h4 className="font-head font-bold uppercase tracking-wider text-lg">{t.name}</h4>
-                <span className="text-xs text-orange group-hover:text-white tracking-wider transition-colors">{t.role}</span>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//           {team.map((t, i) => (
+//             <motion.div
+//               key={i}
+//               initial={{ opacity: 0, y: 50 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               viewport={{ once: true }}
+//               transition={{ duration: 0.6, delay: i * 0.1 }}
+//               whileHover={{ y: -8 }}
+//               className="group relative overflow-hidden bg-dark"
+//             >
+//               <div className="aspect-[3/4] overflow-hidden">
+//                 <motion.img
+//                   src={t.img}
+//                   alt=""
+//                   className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+//                 />
+//               </div>
+//               <div className="bg-dark text-white p-5 relative group-hover:bg-orange transition-colors duration-300">
+//                 <div className="absolute -top-4 left-5 w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-b-[15px] border-b-dark group-hover:border-b-orange transition-colors"></div>
+//                 <h4 className="font-head font-bold uppercase tracking-wider text-lg">{t.name}</h4>
+//                 <span className="text-xs text-orange group-hover:text-white tracking-wider transition-colors">{t.role}</span>
+//               </div>
+//             </motion.div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }
 
 export default function About() {
   return (
@@ -181,7 +181,7 @@ export default function About() {
       <AboutMain />
       <ProcessSection />
       <WhyChooseUs />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <CTABanner title="Ready to put a real cutting crew on your site?" buttonText="Talk To Us" />
     </motion.div>
   )

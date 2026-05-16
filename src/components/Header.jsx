@@ -34,8 +34,8 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex gap-6">
             <span className="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-orange">MON–SAT: 8AM–8PM</span>
-            <span className="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-orange">INFO@COREANDDRILL.COM</span>
-            <span className="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-orange">+91 98765 43210</span>
+            <span className="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-orange">coreanddrill@gmail.com</span>
+            <span className="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-orange">+91 8400664700</span>
           </div>
           <div className="flex gap-5">
             <a href="#" className="hover:text-orange transition">FACEBOOK</a>
@@ -51,22 +51,17 @@ export default function Header() {
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className={`sticky top-0 z-50 transition-all duration-500 ${
-          scrolled ? 'bg-dark/90 backdrop-blur-xl border-b border-orange/30' : 'bg-dark border-b-2 border-orange'
+          scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-orange/30' : 'bg-white border-b-2 border-orange'
         }`}
       >
         <nav className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-3 group">
-            <motion.div
-              whileHover={{ rotate: 90 }}
-              transition={{ duration: 0.5 }}
-              className="w-10 h-10 bg-orange rotate-45 grid place-items-center"
-            >
-              <div className="w-3.5 h-3.5 bg-dark"></div>
-            </motion.div>
-            <div className="font-display text-3xl tracking-widest text-white">
-              CORE<span className="text-orange">&</span>DRILL
-            </div>
-          </Link>
+         <Link to="/" className="group flex items-center">
+  <img
+    src="/logo.png"
+    alt="Core & Drill Logo"
+    className="h-14 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+  />
+</Link>
 
           <ul className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
@@ -74,7 +69,7 @@ export default function Header() {
                 <Link
                   to={item.to}
                   className={`relative font-head font-semibold text-sm tracking-widest uppercase px-5 py-3 transition ${
-                    location.pathname === item.to ? 'text-orange' : 'text-white hover:text-orange'
+                    location.pathname === item.to ? 'text-orange' : 'text-dark hover:text-orange'
                   }`}
                 >
                   {item.label}

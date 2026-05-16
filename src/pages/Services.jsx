@@ -44,11 +44,11 @@ const allServices = [
     features: ['Mechanical wedge & sleeve anchors', 'Chemical resin anchors (epoxy & polyester)', 'Rebar dowel & post-installed connections', 'Façade & curtain wall fixing', 'Pull-out load testing certificates']
   },
   {
-    num: '06', id: 'rewiring', title: 'Complete Rewiring',
-    short: 'Full-house and commercial wiring with certified safety testing.',
-    desc: 'Full-house and commercial rewiring with ISI-marked cables, modular MCB panels, RCCB protection and proper earthing. We coordinate with our cutting crew so chasing happens as one job.',
+    num: '06', id: 'rebaring', title: 'Complete Rebaring',
+    short: 'Full-house and commercial rebaring with certified safety testing.',
+    desc: 'Full-house and commercial rebaring with ISI-marked bars, proper placement and anchoring. We coordinate with our cutting crew so chasing happens as one job.',
     img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1000&q=80',
-    features: ['Residential & apartment rewiring', 'Commercial & retail wiring', 'MCB panel & DB board installation', 'Earthing & lightning protection', 'ELCB, RCCB & safety certification']
+    features: ['Residential & apartment rebaring', 'Commercial & retail rebaring', 'Proper bar placement & anchoring', 'Concrete cover & spacing', 'Rebar tying & splicing']
   },
 ]
 

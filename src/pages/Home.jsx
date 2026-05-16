@@ -15,12 +15,12 @@ const services = [
   { num: '03', title: 'Wall Cutting & Sawing', desc: 'Track-mounted saws for door openings, windows and structural cuts.', img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80' },
   { num: '04', title: 'Floor Sawing & Cutting', desc: 'Walk-behind saws for joints, trenches and slab removal up to 500mm.', img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=80' },
   { num: '05', title: 'Chemical Anchor Fixing', desc: 'High-load mechanical and resin anchors for any structural retrofit.', img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=900&q=80' },
-  { num: '06', title: 'Complete Rewiring', desc: 'Full-house and commercial wiring with certified safety testing.', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80' },
+  { num: '06', title: 'Complete Rebaring', desc: 'Full-house and commercial wiring with certified safety testing.', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80' },
 ]
 
 const stats = [
-  { num: '15+', label: 'Years on Site' },
-  { num: '2.4K', label: 'Projects Done' },
+  { num: '5+', label: 'Years on Site' },
+  { num: '500+', label: 'Projects Done' },
   { num: '98%', label: 'Repeat Clients' },
   { num: '24/7', label: 'Emergency Crew' },
 ]
@@ -128,7 +128,7 @@ function HeroSection() {
             transition={{ duration: 0.7, delay: 0.85 }}
             className="text-white/70 max-w-xl mt-8 mb-10 text-lg"
           >
-            From concrete core drilling to wall sawing, anchor installation and full rewiring — we deliver clean, accurate, on-schedule work for contractors and homeowners across India.
+            From concrete core drilling to wall sawing, anchor installation and full Rebaring — we deliver clean, accurate, on-schedule work for contractors and homeowners across India.
           </motion.p>
 
           <motion.div
@@ -185,7 +185,7 @@ function HeroSection() {
         <div className="marquee-track font-display text-2xl tracking-[3px]">
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex gap-12 items-center">
-              {['Core Cutting', 'Diamond Drilling', 'Wall Sawing', 'Floor Cutting', 'Anchor Fixing', 'Rewiring'].map(t => (
+              {['Core Cutting', 'Diamond Drilling', 'Wall Sawing', 'Floor Cutting', 'Anchor Fixing', 'Rebaring'].map(t => (
                 <span key={t} className="flex items-center gap-12">
                   {t}
                   <span className="text-sm">◆</span>
@@ -289,7 +289,7 @@ function AboutSection() {
           <div className="space-y-4 mb-8">
             {[
               { num: '01', title: 'Specialist Cutting Crew', desc: 'Trained on every blade size from 12mm cores to 1200mm wall saws.' },
-              { num: '02', title: 'Full-Service Renovation', desc: 'Cutting, drilling, anchor fixing and complete electrical rewiring.' },
+              { num: '02', title: 'Full-Service Renovation', desc: 'Cutting, drilling, anchor fixing and complete electrical Rebaring.' },
               { num: '03', title: 'Transparent Pricing', desc: 'Detailed written quotes. No hidden charges, ever.' },
             ].map((p, i) => (
               <motion.div
@@ -390,7 +390,7 @@ function VideoSection() {
         <SectionTag>Watch Us In Action</SectionTag>
         <SectionTitle accent="Cutting Edge">See The</SectionTitle>
         <FadeIn delay={0.2}>
-          <p className="text-gray-600 mt-6 mb-16 max-w-xl text-lg">Real footage from real sites. Watch our crew handle drilling, sawing, cutting and rewiring jobs.</p>
+          <p className="text-gray-600 mt-6 mb-16 max-w-xl text-lg">Real footage from real sites. Watch our crew handle drilling, sawing, cutting and Rebaring jobs.</p>
         </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-[auto_auto] md:grid-rows-2 gap-5 h-auto md:h-[640px]">
@@ -463,7 +463,7 @@ function ProjectsSection() {
     { cat: 'Core Drilling', title: 'Apartment Tower, Gorakhpur', img: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80' },
     { cat: 'Floor Sawing', title: 'Industrial Floor, Kanpur', img: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=900&q=80' },
     { cat: 'Anchor Fixing', title: 'Steel Structure Mount', img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=900&q=80' },
-    { cat: 'Rewiring', title: 'Hotel Block Rewire', img: 'https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=900&q=80' },
+    { cat: 'Rebaring', title: 'Hotel Block Rewire', img: 'https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=900&q=80' },
     { cat: 'Core Cutting', title: 'Drainage Cut, Varanasi', img: 'https://images.unsplash.com/photo-1590725140246-20acdee442be?w=900&q=80' },
   ]
   return (

@@ -18,11 +18,7 @@ const faqs = [
   },
   {
     q: 'How quickly can you visit my site?',
-    a: 'We aim for a same-day or next-day site visit anywhere in Gorakhpur, Lucknow, Kanpur and surrounding districts. Emergency cutting jobs (water leaks, urgent demolition) — we can be there within 4 hours.'
-  },
-  {
-    q: 'Do you handle electrical rewiring along with the cutting work?',
-    a: 'Yes, this is one of our specialties. Our cutting and electrical crews coordinate as one team — chasing, conduit laying, MCB panel installation and final certification all happen under one project manager.'
+    a: 'We aim for a same-day or next-day site visit anywhere in Gorakhpur, Lucknow, Kanpur and surrounding districts. Emergency cutting jobs (water leaks, urgent demolition) — we can be there within few hours.'
   },
   {
     q: 'Will you provide a written quote before starting?',

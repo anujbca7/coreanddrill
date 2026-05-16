@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
 
 const clients = [
-  'MEHTA BUILDERS',
+  'SHALIMAR',
   'SHRIRAM CONSTRUCTIONS',
-  'GREEN VALLEY HOMES',
-  'INDUS REALTY',
+  'Larsen & Toubro',
+  'Ristey',
   'BHARAT INFRA',
-  'PRIME PROPERTIES',
-  'ASHOK GROUP',
-  'NORTHGATE TOWERS',
+  'OMEX',
+  'Wagman',
+  'Migsun Hotel',
 ]
 
 export default function ClientStrip() {
